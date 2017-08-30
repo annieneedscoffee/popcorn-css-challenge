@@ -3,7 +3,10 @@ Header background - #FFDBAA
 button - #805215
 Header Text - #553100
 Main background - #D4A76A*/
-
+* {
+  max-width: 1390px;
+  font-family: sans-serif;
+}
 header {
   color: #553100;
   background: #FFDBAA;
@@ -12,7 +15,6 @@ header {
   padding: 20px;
   border-bottom: 2px solid black;
   font-weight: bold;
-  font-family: sans-serif;
   width: 100%;
 }
 
@@ -21,8 +23,17 @@ header {
 }
 .header-btn {
   float: right;
-  margin-left: 5px;
-  height: 30px;
+  margin-left: 40px;
+  height: 50px;
+  width: 100px;
+}
+
+button:hover{
+  color: #553100;
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #553100;
 }
 
 button {
@@ -31,11 +42,16 @@ button {
   color: white;
   border: none;
 }
+.small-buttons{
+  width: 335px;
+  height: 35px;
+  margin-top: -10px;
+}
 
 .whitebox {
   text-align: center;
   height:150px;
-  width:300px;
+  width:350px;
   box-shadow: 1px 1px 8px grey;
   display: inline-block;
   margin: 10px;
@@ -49,11 +65,23 @@ button {
 }
 .bigbox {
   text-align: center;
-  height:185px;
-  width: 900px;
+  height: 160px;
+  width: 1100px;
   box-shadow: 1px 1px 8px grey;
   margin: 0 auto;
   background-color: white;
+  padding: 10px;
+}
+
+.big-button{
+  height: 35px;
+  width: 1080px;
+  margin-top: -10px;
+}
+
+p {
+  text-align: left;
+  margin-left: 10px;
 }
 
 body {
